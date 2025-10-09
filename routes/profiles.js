@@ -3,7 +3,9 @@ const { generateProfiles } = require('../controllers/profileController');
 
 const router = express.Router();
 
-router.post('/api/profiles', generateProfiles);
+
+router.get('/generate', generateProfiles);
+
 
 module.exports = router;
 
